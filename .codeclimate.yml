@@ -1,0 +1,9 @@
+engines:
+  govet:
+    enabled: true
+
+ratings:
+  paths:
+    - "gerencianet/**/*.rb"
+exclude_paths:
+    - _examples/**/*
