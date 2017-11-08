@@ -11,7 +11,7 @@ provided by [Gerencianet](http://gerencianet.com.br).
 Install with:
 
 ```bash
-$ go get github.com/gerencianet/gn-api-sdk-go
+$ go get github.com/gerencianet/gn-api-sdk-go/gerencianet
 ```
 ## Tested with
 ```
