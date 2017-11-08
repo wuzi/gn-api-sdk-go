@@ -4,6 +4,6 @@ engines:
 
 ratings:
   paths:
-    - "gerencianet/**/*.rb"
+    - "gerencianet/**/*.go"
 exclude_paths:
     - _examples/**/*
