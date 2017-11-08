@@ -3,9 +3,8 @@
 > A go library for integration of your backend with the payment services
 provided by [Gerencianet](http://gerencianet.com.br).
 
-[![Build Status](https://travis-ci.org/gerencianet/gn-api-sdk-go.svg)](https://travis-ci.org/gerencianet/gn-api-sdk-python)
-[![Coverage Status](https://coveralls.io/repos/gerencianet/gn-api-sdk-go/badge.svg?branch=master&service=github)](https://coveralls.io/github/gerencianet/gn-api-sdk-python?branch=master)
-[![Code Climate](https://codeclimate.com/github/gerencianet/gn-api-sdk-go/badges/gpa.svg)](https://codeclimate.com/github/gerencianet/gn-api-sdk-python)
+[![Build Status](https://travis-ci.org/gerencianet/gn-api-sdk-go.svg)](https://travis-ci.org/gerencianet/gn-api-sdk-go)
+[![Coverage Status](https://coveralls.io/repos/github/gerencianet/gn-api-sdk-go/badge.svg?branch=master)](https://coveralls.io/github/gerencianet/gn-api-sdk-go?branch=master)
 
 ## Installation
 
