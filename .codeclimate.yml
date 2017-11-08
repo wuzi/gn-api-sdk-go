@@ -1,9 +1,6 @@
-engines:
+plugins:
   govet:
     enabled: true
 
-ratings:
-  paths:
-    - "**.go"
-exclude_paths:
+exclude_patterns:
     - "_examples/**/*"
