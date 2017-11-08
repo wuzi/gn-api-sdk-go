@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/FilipeMata/gn-api-sdk-go/gerencianet"
-	"github.com/FilipeMata/gn-api-sdk-go/examples/configs"
+	"github.com/gerencianet/gn-api-sdk-go/gerencianet"
+	"github.com/gerencianet/gn-api-sdk-go/examples/configs"
 )
 
 func main(){
