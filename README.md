@@ -15,12 +15,11 @@ $ go get github.com/gerencianet/gn-api-sdk-go/gerencianet
 ```
 ## Tested with
 ```
-go 1.x
+go 1.8
 ```
 ## Basic usage
 
 ```go
-# encoding: utf-8
 
 import (
     "github.com/gerencianet/gn-api-sdk-go/gerencianet"
@@ -29,8 +28,8 @@ import (
 credentials := map[string]interface{} {
     "client_id": "client_id",
     "client_secret": "client_secret",
-    "sandbox": true
-    "timeout": 10
+    "sandbox": true,
+    "timeout": 10,
 }
 
 gn := gerencianet.NewGerencianet(credentials)
@@ -39,11 +38,11 @@ body = {
     "items": [{
         "name": "Product 1",
         "value": 1000,
-        "amount": 2
+        "amount": 2,
     }],
     "shippings": [{
         "name": "Default Shipping Cost",
-        "value": 100
+        "value": 100,
     }]
 }
 
@@ -53,7 +52,7 @@ res, err := gn.CreateCharge(body)
 
 ## Examples
 
-You can run the examples inside `examples` with
+You can run the examples inside `_examples` with
 `$ go run example.go`:
 
 ```bash
