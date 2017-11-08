@@ -5,7 +5,6 @@ provided by [Gerencianet](http://gerencianet.com.br).
 
 [![Build Status](https://travis-ci.org/gerencianet/gn-api-sdk-go.svg)](https://travis-ci.org/gerencianet/gn-api-sdk-go)
 [![Coverage Status](https://coveralls.io/repos/github/gerencianet/gn-api-sdk-go/badge.svg?branch=master)](https://coveralls.io/github/gerencianet/gn-api-sdk-go?branch=master)
-[![Code Climate](https://codeclimate.com/github/gerencianet/gn-api-sdk-go/badges/gpa.svg)](https://codeclimate.com/github/gerencianet/gn-api-sdk-go)
 
 ## Installation
 
