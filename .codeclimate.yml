@@ -6,4 +6,4 @@ ratings:
   paths:
     - "gerencianet/*.go"
 exclude_paths:
-    - "_examples/*.go"
+    - _examples/**/*
