@@ -81,7 +81,7 @@ The full documentation with all available endpoints is in https://dev.gerenciane
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/gerencianet/gn-api-sdk-python. This project is intended to be a safe, welcoming space for collaboration.
+Bug reports and pull requests are welcome on GitHub at https://github.com/gerencianet/gn-api-sdk-go. This project is intended to be a safe, welcoming space for collaboration.
 
 ## License
 
