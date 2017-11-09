@@ -1,6 +1,6 @@
 # gn-api-sdk-go
 
-> A go library for integration of your backend with the payment services.
+> A go library for integration of your backend with the Gerencianet payment services.
 
 ## Installation
 
