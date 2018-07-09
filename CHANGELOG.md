@@ -1,3 +1,7 @@
+# 1.0.2
+
+- Added: new endpoint (create charge balance sheet)
+
 # 1.0.1
 
 - Added: new endpoint (update plan)

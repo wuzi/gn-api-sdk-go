@@ -174,3 +174,8 @@ func (endpoints endpoints) UpdatePlan(planID int, body map[string]interface{}) (
 	params := map[string]string{ "id": strconv.Itoa(planID) }
 	return endpoints.requester.request("/plan/:id", "PUT", params, body)
 }
+
+func (endpoints endpoints) CreateChargeBalanceSheet(chargeID int, body map[string]interface{}) (string, error) {
+	params := map[string]string{ "id": strconv.Itoa(chargeID) }
+	return endpoints.requester.request("/charge/:id/balance-sheet", "POST", params, body)
+}
