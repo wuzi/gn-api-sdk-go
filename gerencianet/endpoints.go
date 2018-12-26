@@ -179,3 +179,16 @@ func (endpoints endpoints) CreateChargeBalanceSheet(chargeID int, body map[strin
 	params := map[string]string{ "id": strconv.Itoa(chargeID) }
 	return endpoints.requester.request("/charge/:id/balance-sheet", "POST", params, body)
 }
+
+func (endpoints endpoints) SettleCarnetParcel(carnetID int, parcel int) (string, error) {
+	params := map[string]string{ 
+		"id": strconv.Itoa(carnetID),
+		"parcel": strconv.Itoa(parcel),
+	}
+	return endpoints.requester.request("/carnet/:id/parcel/:parcel/settle", "PUT", params, nil)
+}
+
+func (endpoints endpoints) SettleCharge(chargeID int) (string, error) {
+	params := map[string]string{ "id": strconv.Itoa(chargeID) }
+	return endpoints.requester.request("/charge/:id/settle", "PUT", params, nil)
+}

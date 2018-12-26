@@ -15,7 +15,7 @@ $ go get github.com/gerencianet/gn-api-sdk-go/gerencianet
 ```
 ## Tested with
 ```
-go 1.8
+go 1.8 and 1.11.4
 ```
 ## Basic usage
 
