@@ -11,18 +11,20 @@ provided by [Gerencianet](http://gerencianet.com.br).
 Install with:
 
 ```bash
+
 $ go get github.com/gerencianet/gn-api-sdk-go/gerencianet
 ```
 ## Tested with
 ```
-go 1.8
+go 1.8 and 1.11.4
+
 ```
 ## Basic usage
 
 ```go
 
 import (
-    "github.com/gerencianet/gn-api-sdk-go/gerencianet"
+    "github.com/FilipeMata/gn-api-sdk-go/gerencianet"
 )
 
 credentials := map[string]interface{} {
@@ -69,17 +71,10 @@ To run the tests, just run:
 $ go test
 ```
 
-## Additional documentation
-
-The full documentation with all available endpoints is in https://dev.gerencianet.com.br/.
-
 ## Changelog
 
 [CHANGELOG](CHANGELOG.md)
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/gerencianet/gn-api-sdk-go. This project is intended to be a safe, welcoming space for collaboration.
 
 ## License
 
