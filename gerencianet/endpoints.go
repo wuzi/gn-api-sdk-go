@@ -12,6 +12,10 @@ func (endpoints endpoints) CreateCharge(body map[string]interface{}) (string, er
 	return endpoints.requester.request("/charge", "POST", nil, body)
 }
 
+func (endpoints endpoints) CreateChargeOneStep(body map[string]interface{}) (string, error) {
+	return endpoints.requester.request("/charge/one-step", "POST", nil, body)
+}
+
 func (endpoints endpoints) DetailCharge(chargeID int) (string, error) {
 	params := map[string]string{ "id": strconv.Itoa(chargeID) }
 	return endpoints.requester.request("/charge/:id", "GET", params, nil)
