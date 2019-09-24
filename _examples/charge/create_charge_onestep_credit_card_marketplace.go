@@ -2,7 +2,7 @@ package main
   import (
          "fmt"
          "github.com/gerencianet/gn-api-sdk-go/gerencianet"
-         "../configs"
+         "github.com/gerencianet/gn-api-sdk-go/_examples/configs"
 )
 
 func main(){
