@@ -13,10 +13,11 @@ Install with:
 ```bash
 
 $ go get github.com/gerencianet/gn-api-sdk-go/gerencianet
+$ go mod init github.com/gerencianet/gn-api-sdk-go
 ```
 ## Tested with
 ```
-go 1.8 and 1.11.4
+go 1.8, 1.11.4 and 1.16.5
 
 ```
 ## Basic usage
@@ -24,7 +25,8 @@ go 1.8 and 1.11.4
 ```go
 
 import (
-    "github.com/FilipeMata/gn-api-sdk-go/gerencianet"
+    "github.com/gerencianet/gn-api-sdk-go/gerencianet"
+	"github.com/gerencianet/gn-api-sdk-go/examples/configs"
 )
 
 credentials := map[string]interface{} {
