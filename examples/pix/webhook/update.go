@@ -9,7 +9,7 @@ import (
 func main(){
 	
 	credentials := configs.Credentials
-	gn := gerencianet.NewGerencianet(credentials)
+	gn := pix.NewGerencianet(credentials)
 
 	
 	const chave = "937e676f-583b-42df-82cd-fbb4"

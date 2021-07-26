@@ -9,7 +9,7 @@ import (
 func main(){
 	
 	credentials := configs.Credentials
-	gn := gerencianet.NewGerencianet(credentials)
+	gn := pix.NewGerencianet(credentials)
 
 	body := map[string]interface{} {}	
 	const key = "48044e07-e215-417f-b1ad-32ee2d99c2bc"

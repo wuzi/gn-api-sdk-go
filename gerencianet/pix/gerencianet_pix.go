@@ -1,6 +1,6 @@
 package pix
 
-type gerencianet struct {
+type pix struct {
 	endpoints
 }
 

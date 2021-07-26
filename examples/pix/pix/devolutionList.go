@@ -9,7 +9,7 @@ import (
 func main(){
 	
 	credentials := configs.Credentials
-	gn := gerencianet.NewGerencianet(credentials)
+	gn := pix.NewGerencianet(credentials)
 
 	
 	const e2eid = "E00416968202105211756Rh0iPsaJ1RK"

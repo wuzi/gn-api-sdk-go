@@ -9,7 +9,7 @@ import (
 func main(){
 	
 	credentials := configs.Credentials
-	gn := gerencianet.NewGerencianet(credentials)
+	gn := pix.NewGerencianet(credentials)
 
 
 	res, err := gn.ListKey(nil) 
