@@ -9,7 +9,7 @@ import (
 func main(){
 	
 	credentials := configs.Credentials	
-	gn := gerencianet.NewGerencianet(credentials)
+	gn := pix.NewGerencianet(credentials)
 
 	
 	const inicio = "2021-03-01T03:01:35Z"
