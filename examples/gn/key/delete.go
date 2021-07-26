@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/gerencianet/gn-api-sdk-go/gerencianet"
+	"github.com/gerencianet/gn-api-sdk-go/gerencianet/pix"
 	"github.com/gerencianet/gn-api-sdk-go/examples/configs"
 )
 
