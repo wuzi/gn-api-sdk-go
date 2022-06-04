@@ -1,3 +1,7 @@
+# 1.1.1
+
+- Fix: pix creation (createCharge and createImmediateCharge)
+
 # 1.1.0
 
 - Added: new endpoint (one step)
