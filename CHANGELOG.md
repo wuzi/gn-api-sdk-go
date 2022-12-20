@@ -1,3 +1,7 @@
+# 3.0.0
+
+- Added: new endpoints and apis
+
 # 1.1.1
 
 - Fix: pix creation (createCharge and createImmediateCharge)

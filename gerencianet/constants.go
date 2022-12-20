@@ -1,6 +1,6 @@
 package gerencianet
 
-var Version = "1.1.1"
+var Version = "3.0.0"
 
 const (
 	UrlSandbox = "https://sandbox.gerencianet.com.br/v1"
