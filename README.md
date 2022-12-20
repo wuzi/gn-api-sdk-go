@@ -32,7 +32,7 @@ import (
 credentials := map[string]interface{} {
     "client_id": "client_id",
     "client_secret": "client_secret",
-    "sandbox": true,
+    "sandbox": false,
     "timeout": 10,
 }
 
