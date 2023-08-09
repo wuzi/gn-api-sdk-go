@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"io"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -58,9 +59,6 @@ func authenticate(requester *requester) (bool, error) {
 }
 
 func (requester requester) request(endpoint string, httpVerb string, requestParams map[string]string, body map[string]interface{}) (string, error) {
-	requestBody := new(bytes.Buffer)
-	json.NewEncoder(requestBody).Encode(body)
-
 	_, authErr := authenticate(&requester)
 	if authErr != nil {
 		_, authErr = authenticate(&requester)
@@ -71,7 +69,20 @@ func (requester requester) request(endpoint string, httpVerb string, requestPara
 
 	route := getRoute(endpoint, requestParams)
 	route += getQueryString(requestParams)
-	req, _ := http.NewRequest(httpVerb, requester.url+route, requestBody)
+
+	var req *http.Request
+	var requestBody io.Reader
+
+	if body != nil {
+		requestBodyBytes := new(bytes.Buffer)
+		err := json.NewEncoder(requestBodyBytes).Encode(body)
+		if err != nil {
+			return "", err
+		}
+		requestBody = requestBodyBytes
+	}
+
+	req, _ = http.NewRequest(httpVerb, requester.url+route, requestBody)
 
 	if ( httpVerb == "POST" || httpVerb == "PUT" ) && body != nil  {
 		req.Header.Add("Content-Type", "application/json")
@@ -90,7 +101,7 @@ func (requester requester) request(endpoint string, httpVerb string, requestPara
 	reqResp, _ := ioutil.ReadAll(res.Body)
 	response := string(reqResp)
 
-	if (res.StatusCode != http.StatusOK && res.StatusCode != http.StatusCreated) {
+	if (res.StatusCode != http.StatusOK && res.StatusCode != http.StatusCreated && res.StatusCode != http.StatusNoContent) {
 		return "", errors.New(response)
 	}
 
