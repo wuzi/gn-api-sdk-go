@@ -70,9 +70,7 @@ func (requester requester) request(endpoint string, httpVerb string, requestPara
 	route := getRoute(endpoint, requestParams)
 	route += getQueryString(requestParams)
 
-	var req *http.Request
 	var requestBody io.Reader
-
 	if body != nil {
 		requestBodyBytes := new(bytes.Buffer)
 		err := json.NewEncoder(requestBodyBytes).Encode(body)
@@ -81,8 +79,7 @@ func (requester requester) request(endpoint string, httpVerb string, requestPara
 		}
 		requestBody = requestBodyBytes
 	}
-
-	req, _ = http.NewRequest(httpVerb, requester.url+route, requestBody)
+	req, _ := http.NewRequest(httpVerb, requester.url+route, requestBody)
 
 	if ( httpVerb == "POST" || httpVerb == "PUT" ) && body != nil  {
 		req.Header.Add("Content-Type", "application/json")
